@@ -27,4 +27,4 @@ jobs:
 
       - name: Sync files to Google Cloud Storage
         run: |
-          gsutil -m rsync -r ./templates/js gs://saboresolimpica/templates
+          gsutil -m rsync -r ./templates/ gs://saboresolimpica/templates
