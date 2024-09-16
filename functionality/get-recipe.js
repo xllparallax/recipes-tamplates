@@ -1,35 +1,47 @@
 document.addEventListener("DOMContentLoaded", () => {
-  const recipe = {
-    mainImage: "https://via.placeholder.com/800x400?text=Main+Image",
-    name: "Delicious Pancakes",
-    description:
-      "A simple and delicious pancake recipe that’s perfect for breakfast.",
-    category: "Breakfast",
-    difficulty: "Easy",
-    servings: 4,
-    time: 20,
-    ingredients: 6,
-    videoImage: "https://via.placeholder.com/800x400?text=Video",
-    ingredientList: [
-      { name: "Flour", quantity: "2 cups" },
-      { name: "Milk", quantity: "1.5 cups" },
-      { name: "Eggs", quantity: "2" },
-      { name: "Sugar", quantity: "2 tablespoons" },
-      { name: "Baking Powder", quantity: "1 tablespoon" },
-      { name: "Salt", quantity: "1/2 teaspoon" },
-    ],
-    instructions: [
-      "In a large bowl, mix together the flour, sugar, baking powder, and salt.",
-      "In another bowl, whisk the eggs, milk, and melted butter.",
-      "Pour the wet ingredients into the dry ingredients and stir until just combined.",
-      "Heat a griddle or frying pan over medium heat and lightly grease with butter.",
-      "Pour 1/4 cup of batter onto the griddle for each pancake. Cook until bubbles form on the surface, then flip and cook until golden brown.",
-      "Serve warm with your favorite toppings.",
-    ],
-  };
-
-  injectRecipeData(recipe);
+  fetchRecipeData();
 });
+
+async function fetchRecipeData() {
+  try {
+    const recipe = await new Promise((resolve) => {
+      setTimeout(() => {
+        resolve({
+          mainImage: "https://via.placeholder.com/800x400?text=Main+Image",
+          name: "Delicious Pancakes",
+          description:
+            "A simple and delicious pancake recipe that’s perfect for breakfast.",
+          category: "Breakfast",
+          difficulty: "Easy",
+          servings: 4,
+          time: 20,
+          ingredients: 6,
+          videoImage: "https://via.placeholder.com/800x400?text=Video",
+          ingredientList: [
+            { name: "Flour", quantity: "2 cups" },
+            { name: "Milk", quantity: "1.5 cups" },
+            { name: "Eggs", quantity: "2" },
+            { name: "Sugar", quantity: "2 tablespoons" },
+            { name: "Baking Powder", quantity: "1 tablespoon" },
+            { name: "Salt", quantity: "1/2 teaspoon" },
+          ],
+          instructions: [
+            "In a large bowl, mix together the flour, sugar, baking powder, and salt.",
+            "In another bowl, whisk the eggs, milk, and melted butter.",
+            "Pour the wet ingredients into the dry ingredients and stir until just combined.",
+            "Heat a griddle or frying pan over medium heat and lightly grease with butter.",
+            "Pour 1/4 cup of batter onto the griddle for each pancake. Cook until bubbles form on the surface, then flip and cook until golden brown.",
+            "Serve warm with your favorite toppings.",
+          ],
+        });
+      }, 2000);
+    });
+
+    injectRecipeData(recipe);
+  } catch (error) {
+    console.error("Error fetching recipe data:", error);
+  }
+}
 
 function injectRecipeData(recipe) {
   document.querySelector('img[style*="width: 100%"]').src = recipe.mainImage;
