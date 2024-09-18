@@ -1,7 +1,16 @@
-.recipe-card {
+.recipe-separator {
   display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.recipe-wrapper {
   max-width: 1000px;
   margin: auto;
+}
+
+.recipe-card {
+  display: flex;
   background-color: white;
   border-radius: 10px;
   overflow: hidden;
@@ -91,4 +100,63 @@
   justify-content: space-between;
   align-items: center;
   align-content: center;
+}
+
+.video-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  background-color: #eaeaea;
+  border-radius: 12px;
+}
+
+.video-wrapper {
+  position: relative;
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.video-thumbnail {
+  width: 100%;
+  border-radius: 8px;
+}
+
+.play-button {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.play-button svg {
+  width: 60px;
+  height: 60px;
+}
+
+.video-description {
+  margin-top: 15px;
+  padding: 0 20px;
+  text-align: center;
+  color: #6c6c6c;
+}
+
+.video-description p {
+  font-size: 16px;
+  line-height: 1.6;
+  position: relative;
+  padding-left: 30px;
+}
+
+.video-description p::before {
+  content: "";
+  position: absolute;
+  top: 8px;
+  left: 0;
+  width: 3px;
+  height: 100%;
+  background-color: red;
+  border-radius: 3px;
 }
