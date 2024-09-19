@@ -29,4 +29,4 @@ jobs:
         run: |
           gsutil -m rsync -r ./templates/ gs://saboresolimpica/templates
           gsutil -m rsync -r ./styles/ gs://saboresolimpica/styles
-          gsutil -m rsync -r ./functionality/ gs://saboresolimpica/functionality
+          gsutil -m rsync -r ./recipes/ gs://saboresolimpica/recipes
