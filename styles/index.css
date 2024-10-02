@@ -21,6 +21,10 @@
   overflow: hidden;
 }
 
+.recipe-image {
+  width: 100%;
+}
+
 .recipe-image img {
   width: 100%;
   height: auto;
@@ -54,7 +58,7 @@
 
 .recipe-title {
   color: var(--recipe-main-color);
-  font-size: 48px;
+  font-size: 40px;
   font-weight: bold;
   margin-top: 10px;
 }
