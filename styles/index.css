@@ -192,6 +192,7 @@
   width: 100%;
   display: flex;
   gap: 3rem;
+  align-items: baseline;
 }
 
 .ingredients {
@@ -204,8 +205,8 @@
 }
 
 .ingredients-container {
-  padding: 1.25rem;
-  border-radius: 10px;
+  padding: 2rem;
+  border-radius: 25px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   background: white;
 }
@@ -349,6 +350,12 @@
   background-size: 8px 1px;
   background-repeat: repeat-x;
   margin: 15px 0;
+}
+
+.ready {
+  color: var(--recipe-main-color);
+  font-weight: 500;
+  font-size: 1.25rem;
 }
 
 .ingredient-row::after {
