@@ -195,6 +195,12 @@
   align-items: baseline;
 }
 
+.ingredients-list {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
 .ingredients {
   display: flex;
   flex-direction: column;
