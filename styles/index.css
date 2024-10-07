@@ -12,6 +12,7 @@
 .recipe-wrapper {
   max-width: 1000px;
   margin: auto;
+  padding-block: 3rem;
 }
 
 .recipe-card {

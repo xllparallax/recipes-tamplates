@@ -1,92 +1,85 @@
-<link rel="stylesheet" href="http://localhost:5500/styles/index.css" />
+<div class="recipe-wrapper">
+  <div class="recipe-card">
+    <div class="recipe-image">
+      <div class="image-container"></div>
+    </div>
+    <div class="recipe-info">
+      <div class="recipe-nav">
+        <div class="tags">
+          <span class="tag category">{{category}}</span>
+          <span class="tag difficulty">{{difficulty}}</span>
+        </div>
+        <div class="nav-buttons">
+          <button class="prev">← Anterior</button>
+          <button class="next">Siguiente →</button>
+        </div>
+      </div>
+      <div id="toEdit">
+        <h1 id="title" class="recipe-title">{{title}}</h1>
+      </div>
+      <div id="toEdit">
+        <p id="description" class="recipe-description">{{description}}</p>
+      </div>
+      <div class="recipe-details">
+        <div class="detail">
+          <div class="icon">
+            <img src="http://127.0.0.1:5500/Group 1000002202.png" alt="" />
+          </div>
+          <span># {{portions}}</span>
+        </div>
 
-<div class="recipe-separator">
+        <div class="detail">
+          <div class="icon">
+            <img src="http://127.0.0.1:5500/XMLID_806_.png" alt="" />
+          </div>
+          <span># {{time}}</span>
+        </div>
+
+        <div class="detail">
+          <div class="icon">
+            <img src="http://127.0.0.1:5500/vegetarian_5635323 1.png" alt="" />
+          </div>
+          <span># {{#ingredients}}</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="video-container">
   <div class="recipe-wrapper">
-    <div class="recipe-card">
-      <div class="recipe-image">
-        <div class="image-container"></div>
-      </div>
-      <div class="recipe-info">
-        <div class="recipe-nav">
-          <div class="tags">
-            <span class="tag category">{{category}}</span>
-            <span class="tag difficulty">{{difficulty}}</span>
-          </div>
-          <div class="nav-buttons">
-            <button class="prev">← Anterior</button>
-            <button class="next">Siguiente →</button>
-          </div>
-        </div>
-        <div id="toEdit">
-          <h1 id="title" class="recipe-title">{{title}}</h1>
-        </div>
-        <div id="toEdit">
-          <p id="description" class="recipe-description">{{description}}</p>
-        </div>
-        <div class="recipe-details">
-          <div class="detail">
-            <div class="icon">
-              <img src="http://127.0.0.1:5500/Group 1000002202.png" alt="" />
-            </div>
-            <span># {{portions}}</span>
-          </div>
-
-          <div class="detail">
-            <div class="icon">
-              <img src="http://127.0.0.1:5500/XMLID_806_.png" alt="" />
-            </div>
-            <span># {{time}}</span>
-          </div>
-
-          <div class="detail">
-            <div class="icon">
-              <img
-                src="http://127.0.0.1:5500/vegetarian_5635323 1.png"
-                alt=""
-              />
-            </div>
-            <span># {{#ingredients}}</span>
-          </div>
-        </div>
+    <div class="video-wrapper"></div>
+    <div class="video-description">
+      <div id="toEdit">
+        <p id="videoDescription">{{videoDescription}}</p>
       </div>
     </div>
   </div>
+</div>
 
-  <div class="video-container">
-    <div class="recipe-wrapper">
-      <div class="video-wrapper"></div>
-      <div class="video-description">
-        <div id="toEdit">
-          <p id="videoDescription">{{videoDescription}}</p>
+<div class="recipe-wrapper recipe-list">
+  <div class="recipe-list-row-1">
+    <div class="ingredients">
+      <div class="ingredients-container">
+        <div>
+          <h2 class="ingredient-title">Lista de Ingredientes</h2>
+          <ol class="ingredients-list">
+            {{ingredientsRows}}
+          </ol>
+          <div class="add-to-cart"></div>
         </div>
       </div>
     </div>
-  </div>
-
-  <div class="recipe-wrapper recipe-list">
-    <div class="recipe-list-row-1">
-      <div class="ingredients">
-        <div class="ingredients-container">
-          <div>
-            <h2 class="ingredient-title">Lista de Ingredientes</h2>
-            <ol class="ingredients-list">
-              {{ingredientsRows}}
-            </ol>
-            <div class="add-to-cart"></div>
-          </div>
-        </div>
-      </div>
-      <div class="preparation">
-        <div class="preparation-container">
-          <h2 class="preparation-title">Preparación</h2>
-          <ul class="preparation-list">
-            {{preparationSteps}}
-          </ul>
-          <p class="ready">
-            <strong>¡LISTO!</strong> disfruta de esta deliciosa receta y más en
-            sabores Olímpica.
-          </p>
-        </div>
+    <div class="preparation">
+      <div class="preparation-container">
+        <h2 class="preparation-title">Preparación</h2>
+        <ul class="preparation-list">
+          {{preparationSteps}}
+        </ul>
+        <p class="ready">
+          <strong>¡LISTO!</strong> disfruta de esta deliciosa receta y más en
+          sabores Olímpica.
+        </p>
       </div>
     </div>
   </div>
