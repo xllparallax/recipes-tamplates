@@ -257,7 +257,6 @@
   background-color: var(--recipe-main-color);
   color: white;
   border: none;
-  padding: 10px 20px;
   border-radius: 100vh;
   cursor: pointer;
   display: flex;
