@@ -61,6 +61,7 @@
   font-size: 40px;
   font-weight: bold;
   margin-top: 10px;
+  margin-bottom: 0;
 }
 
 .recipe-description {
@@ -158,8 +159,7 @@
 }
 
 .video-description {
-  margin-top: 15px;
-  padding: 0 20px;
+  margin-top: 3rem;
   text-align: center;
   color: #6c6c6c;
 }
