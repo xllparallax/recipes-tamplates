@@ -415,14 +415,6 @@
   border-radius: 10px 0 0 10px;
 }
 
-.recipe-info {
-  width: 100%;
-  padding: 30px;
-  padding-top: 0px;
-  display: flex;
-  flex-direction: column;
-}
-
 .tags {
   display: flex;
   gap: 1rem;
