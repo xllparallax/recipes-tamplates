@@ -771,3 +771,9 @@
   display: flex;
   gap: 5rem;
 }
+
+.agroup > div {
+  display: flex;
+  width: 100%;
+  flex: 1;
+}
