@@ -157,10 +157,6 @@
   margin-bottom: 0;
 }
 
-.ingredients-list {
-  width: 90%;
-}
-
 .text-ingredients {
   font-size: 13px;
   color: var(--recipe-gray-color);
