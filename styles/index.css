@@ -115,6 +115,7 @@
   justify-content: center;
   gap: 1rem;
   width: 100%;
+  padding-block: 3.5rem;
 }
 
 .video-h-description {
@@ -765,10 +766,15 @@
 .agroup {
   display: flex;
   gap: 5rem;
+  padding-top: 3rem;
 }
 
 .agroup > div {
   display: flex;
   width: 100%;
   flex: 1;
+}
+
+#recipe-info {
+  padding-bottom: 5rem;
 }
