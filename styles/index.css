@@ -16,12 +16,9 @@
   margin: 0 auto;
 }
 
-.div-container {
-  display: flex;
-  flex-direction: row;
-  width: 1000px;
-  padding: 5rem 0;
-  gap: 3rem;
+.wrapper {
+  max-width: 1000px;
+  margin-inline: auto;
 }
 
 .image-container {
@@ -391,12 +388,9 @@
   }
 }
 
-/*** ***/
-
 .recipe-wrapper {
   max-width: 1000px;
   margin: auto;
-  padding-block: 3rem;
 }
 
 .recipe-separator {
