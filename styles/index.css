@@ -306,6 +306,11 @@
 
 /*** ------------------ INGREDIENTS.LIST.IMG ------------------------ ***/
 
+.recipe-info {
+  display: flex;
+  gap: 5rem;
+}
+
 .recipe-list-img-main {
   display: flex;
   flex-direction: column;
