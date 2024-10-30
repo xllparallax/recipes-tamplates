@@ -161,7 +161,7 @@
 
 .ingredient-list-title {
   margin: 0;
-  font-size: 1.75rem;
+  font-size: 2.5rem;
   font-weight: bold;
   font-family: "Inter", sans-serif;
   color: var(--recipe-main-color);
@@ -259,7 +259,6 @@
   margin: 0;
   font-size: 16px;
   margin-top: 20px;
-  text-align: center;
   font-weight: bold;
   color: var(--recipe-main-color);
   margin: 0;
@@ -780,4 +779,9 @@
   );
   background-size: 10px 2px;
   background-repeat: repeat-x;
+}
+
+.agroup {
+  display: flex;
+  gap: 5rem;
 }
