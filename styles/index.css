@@ -336,22 +336,9 @@
   .recipe-info-main {
     width: 100%;
   }
-
-  .div-container {
-    flex-direction: row;
-    gap: 2rem;
-    padding: 4rem 0;
-  }
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
-  .div-container {
-    width: 100%;
-    flex-direction: row;
-    gap: 1rem;
-    padding: 1rem;
-  }
-
   .recipe-icons {
     flex-wrap: wrap;
     gap: 1.5rem;
@@ -368,12 +355,6 @@
 }
 
 @media (max-width: 480px) {
-  .div-container {
-    width: 100%;
-    padding: 0 1rem;
-    flex-direction: column;
-  }
-
   .image-container {
     width: 100%;
   }
