@@ -150,7 +150,7 @@
 
 .ingredient-list-title {
   margin: 0;
-  font-size: 2.5rem;
+  font-size: 2.25rem;
   font-weight: bold;
   font-family: "Inter", sans-serif;
   color: var(--recipe-main-color);
@@ -247,7 +247,7 @@
   font-weight: bold;
   color: var(--recipe-main-color);
   margin: 0;
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 /*** ------------------ RECIPE.VIDEO.VERTICAL ------------------------ ***/
