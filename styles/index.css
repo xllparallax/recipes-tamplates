@@ -2,6 +2,7 @@
   --recipe-main-color: #e30613;
   --recipe-white-color: #ffff;
   --recipe-gray-color: #5d5d5d;
+  --recipe-dark-gray-color: #393939;
 }
 
 /*** ----------------------------------------------------- ***/
@@ -208,6 +209,7 @@
 .step-content {
   display: flex;
   flex-direction: column;
+  color: var(--recipe-gray-color);
 }
 
 .step-title {
@@ -632,6 +634,7 @@
   height: auto;
   padding: 1rem 0;
   border-bottom: 2px dashed var(--recipe-main-color);
+  color: var(--recipe-dark-gray-color);
 }
 
 .add-to-cart {
@@ -762,6 +765,7 @@
 
 .agroup {
   display: flex;
+  align-items: baseline;
   gap: 5rem;
   padding-top: 3rem;
 }
