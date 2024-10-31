@@ -69,6 +69,7 @@
 
 .name-recipe {
   font-size: 2.6rem;
+  line-height: 1;
   font-weight: bold;
   font-family: "Inter", sans-serif;
   color: var(--recipe-main-color);
@@ -117,7 +118,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1rem;
+  gap: 3rem;
   width: 100%;
   padding-block: 3.5rem;
 }
@@ -783,8 +784,12 @@
   padding-top: 3rem;
 }
 
-.agroup > div {
-  width: 100%;
+.agroup :nth-child(1) {
+  width: 50%;
+}
+
+.agroup :nth-child(2) {
+  width: 60%;
 }
 
 #recipe-info {
