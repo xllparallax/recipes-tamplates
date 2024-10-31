@@ -124,6 +124,9 @@
 }
 
 .video-horizontal {
+  width: 100%;
+  background: black;
+  border-radius: 1rem;
   padding-inline: 3rem;
 }
 
@@ -788,12 +791,8 @@
   padding-top: 3rem;
 }
 
-.agroup :nth-child(1) {
-  width: 50%;
-}
-
-.agroup :nth-child(2) {
-  width: 60%;
+.agroup > div {
+  width: 100%;
 }
 
 #recipe-info {
