@@ -140,7 +140,7 @@
 .recipe-list-main {
   display: flex;
   flex-direction: column;
-  border-radius: 1rem;
+  border-radius: 1.563rem;
   padding: 1rem 0;
   gap: 1rem;
   padding: 2rem;
@@ -181,7 +181,6 @@
   align-items: start;
   justify-items: center;
   gap: 2rem;
-  padding: 1rem 0;
 }
 
 .preparation-steps {
@@ -231,7 +230,7 @@
 .step-description {
   font-size: 14px;
   color: var(--recipe-gray-color);
-  margin-top: 0.75rem;
+  margin-top: 0.5rem;
   padding-left: 0.5rem;
 }
 
