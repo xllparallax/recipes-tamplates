@@ -123,6 +123,10 @@
   padding-block: 3.5rem;
 }
 
+.video-horizontal {
+  padding-inline: 3rem;
+}
+
 .video-h-description {
   display: flex;
   width: 100%;
