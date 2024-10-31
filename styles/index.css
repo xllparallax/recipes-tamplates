@@ -798,3 +798,9 @@
 #recipe-info {
   padding-bottom: 5rem;
 }
+
+.dash {
+  border-bottom: 2px dashed var(--recipe-main-color);
+  color: var(--recipe-dark-gray-color);
+  width: 100%;
+}
