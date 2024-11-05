@@ -265,6 +265,7 @@
   width: 100%;
   height: auto;
   gap: 2rem;
+  padding-block: 4rem;
 }
 
 .video-v-container {
@@ -781,7 +782,7 @@
   display: flex;
   align-items: baseline;
   gap: 5rem;
-  padding-top: 3rem;
+  padding-top: 4rem;
 }
 
 .agroup > div {
@@ -805,18 +806,16 @@
 .title {
   text-align: center;
   margin-bottom: 30px;
+  line-height: 1;
 }
 
-.title h1 {
-  color: #333;
-  margin: 0;
-  font-size: 24px;
+.title :nth-child(1) {
+  font-size: 2rem;
+  color: var(--recipe-gray-color);
 }
 
-.title h2 {
-  color: red;
-  margin: 5px 0;
-  font-size: 32px;
+.title :nth-child(3) {
+  font-size: 3rem;
 }
 
 .title p {
@@ -827,25 +826,21 @@
 
 .metrics {
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
+  gap: 4rem;
 }
 
 .metric {
   position: relative;
-  width: 150px;
   text-align: center;
 }
 
 .circle-progress {
-  width: 120px;
-  height: 120px;
+  width: 80%;
+  height: 80%;
   border-radius: 50%;
-  background: white;
   position: relative;
-  margin: 0 auto 10px;
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
 .progress-ring {
@@ -876,7 +871,24 @@
   mask-composite: exclude;
 }
 
-.progress-ring[data-percent] {
+.progress-ring-inner[data-percent] {
+  --percent: attr(data-percent number);
+}
+
+.progress-ring-inner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  padding: 5px;
+  background: #eaeaea;
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.progress-ring-inner[data-percent] {
   --percent: attr(data-percent number);
 }
 
@@ -929,9 +941,11 @@
 }
 
 .metric-label {
-  color: #666;
+  color: var(--recipe-gray-color);
   font-size: 16px;
   margin-top: 5px;
+  font-weight: bold;
+  font-size: 1.25rem;
 }
 
 .inner-circle {
@@ -944,4 +958,92 @@
   background: white;
   border-radius: 50%;
   z-index: 0;
+}
+
+/** extra **/
+
+.circle-progress {
+  position: relative;
+  margin: 0 auto 10px;
+}
+
+.progress-ring {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-ring::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  padding: 5px;
+  background: conic-gradient(
+    #ff0000 calc(var(--percent, 0) * 3.6deg),
+    transparent 0deg
+  );
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.progress-value {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  z-index: 1;
+}
+
+.value {
+  font-size: 24px;
+  font-weight: bold;
+  margin: 0;
+  color: #ff0000;
+}
+
+.percentage {
+  font-size: 14px;
+  color: #666;
+  margin: 0;
+}
+
+.metric-label {
+  color: var(--recipe-gray-color);
+  font-size: 16px;
+  margin-top: 5px;
+  font-weight: bold;
+  font-size: 1.25rem;
+}
+
+.inner-circle {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 85%;
+  height: 85%;
+  background: white;
+  border-radius: 50%;
+  z-index: 0;
+}
+
+.circle {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }

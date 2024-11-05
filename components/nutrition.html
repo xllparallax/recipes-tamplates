@@ -1,57 +1,80 @@
 <section class="nutrition-container">
   <div class="title">
-    <h1>Porcentaje</h1>
+    <h2>Porcentaje</h2>
     <h2>Nutricional</h2>
     <p>Por porción*</p>
   </div>
 
   <div class="metrics">
     <div class="metric proteinas">
-      <div class="circle-progress">
-        <div class="progress-ring" style="--percent: {{proteins}}"></div>
-        <div class="inner-circle"></div>
-        <div class="progress-value">
-          <p class="value">{{proteinsAmount}}{{proteinsUnit}}</p>
-          <p class="percentage">{{proteins}}%</p>
+      <div class="circle">
+        <div class="circle-progress">
+          <div class="progress">
+            <div class="progress-ring-inner" style="--percent: 100"></div>
+            <div class="progress-ring" style="--percent: 13"></div>
+          </div>
+          <div class="inner-circle"></div>
+          <div class="progress-value">
+            <p class="value">{{proteinsAmount}}{{proteinsUnit}}</p>
+            <p class="percentage">{{proteins}}%</p>
+          </div>
         </div>
       </div>
       <div class="metric-label">Proteínas</div>
     </div>
 
     <div class="metric grasas">
-      <div class="circle-progress">
-        <div class="progress-ring" style="--percent: {{fats}}"></div>
-        <div class="inner-circle"></div>
-        <div class="progress-value">
-          <p class="value">{{fatsAmount}}{{fatsUnit}}</p>
-          <p class="percentage">{{fats}}%</p>
+      <div class="circle">
+        <div class="circle-progress">
+          <div class="progress">
+            <div class="progress-ring-inner" style="--percent: 100"></div>
+            <div class="progress-ring" style="--percent: 13"></div>
+          </div>
+          <div class="inner-circle"></div>
+          <div class="progress-value">
+            <p class="value">{{fatsAmount}}{{fatsUnit}}</p>
+            <p class="percentage">{{fats}}%</p>
+          </div>
         </div>
       </div>
       <div class="metric-label">Grasas</div>
     </div>
 
     <div class="metric carbohidratos">
-      <div class="circle-progress">
-        <div class="progress-ring" style="--percent: {{carbohydrates}}"></div>
-        <div class="inner-circle"></div>
-        <div class="progress-value">
-          <p class="value">{{carbohydratesAmount}}{{carbohydratesUnit}}</p>
-          <p class="percentage">{{carbohydrates}}%</p>
+      <div class="circle">
+        <div class="circle-progress">
+          <div class="progress">
+            <div class="progress-ring-inner" style="--percent: 100"></div>
+            <div class="progress-ring" style="--percent: 13"></div>
+          </div>
+          <div class="inner-circle"></div>
+          <div class="progress-value">
+            <p class="value">{{carbohydratesAmount}}{{carbohydratesUnit}}</p>
+            <p class="percentage">{{carbohydrates}}%</p>
+          </div>
         </div>
       </div>
       <div class="metric-label">Carbohidratos</div>
     </div>
 
     <div class="metric calorias">
-      <div class="circle-progress">
-        <div class="progress-ring" style="--percent: {{calories}}"></div>
-        <div class="inner-circle"></div>
-        <div class="progress-value">
-          <p class="value">361,7</p>
-          <p class="percentage">Total</p>
+      <div class="circle">
+        <div class="circle-progress">
+          <div class="progress">
+            <div class="progress-ring-inner" style="--percent: 100"></div>
+            <div class="progress-ring" style="--percent: 13"></div>
+          </div>
+          <div class="inner-circle"></div>
+          <div class="progress-value">
+            <p class="value">361,7</p>
+            <p class="percentage">Total</p>
+          </div>
         </div>
       </div>
       <div class="metric-label">Calorías</div>
     </div>
-  </div>
+
+
 </section>
+
+<link rel="stylesheet" href="../styles/index.css" />
