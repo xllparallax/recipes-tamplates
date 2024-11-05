@@ -801,7 +801,7 @@
 }
 
 .nutrition-container {
-  padding: 1.25rem;
+  padding-block: 5rem;
 }
 
 .title {
@@ -838,6 +838,9 @@
 .metric {
   position: relative;
   text-align: center;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .circle-progress {
@@ -931,7 +934,6 @@
 .metric-label {
   color: var(--recipe-gray-color);
   font-size: 16px;
-  margin-top: 5px;
   font-weight: bold;
   font-size: 1.25rem;
 }
