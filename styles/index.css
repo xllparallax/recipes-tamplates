@@ -962,11 +962,6 @@
 
 /** extra **/
 
-.circle-progress {
-  position: relative;
-  margin: 0 auto 10px;
-}
-
 .progress-ring {
   position: absolute;
   top: 0;
