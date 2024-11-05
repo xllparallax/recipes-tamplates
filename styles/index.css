@@ -859,22 +859,6 @@
   justify-content: center;
 }
 
-.progress-ring::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: 50%;
-  padding: 5px;
-  background: conic-gradient(
-    currentColor calc(var(--percent, 0) * 3.6deg),
-    transparent 0deg
-  );
-  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
-  -webkit-mask-composite: xor;
-  mask-composite: exclude;
-}
-
 .progress-ring-inner[data-percent] {
   --percent: attr(data-percent number);
 }
@@ -884,7 +868,7 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  padding: 5px;
+  padding: 8px;
   background: #eaeaea;
   -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
@@ -983,7 +967,7 @@
   position: absolute;
   inset: 0;
   border-radius: 50%;
-  padding: 5px;
+  padding: 8px;
   background: conic-gradient(
     #ff0000 calc(var(--percent, 0) * 3.6deg),
     transparent 0deg
