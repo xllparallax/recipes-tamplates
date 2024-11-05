@@ -7,6 +7,50 @@
 
 /*** ----------------------------------------------------- ***/
 
+.wrapper {
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+@media (min-width: 475px) {
+  .wrapper {
+    max-width: 475px;
+  }
+}
+
+@media (min-width: 640px) {
+  .wrapper {
+    max-width: 640px;
+  }
+}
+
+@media (min-width: 768px) {
+  .wrapper {
+    max-width: 768px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .wrapper {
+    max-width: 1024px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .wrapper {
+    max-width: 1280px;
+  }
+}
+
+@media (min-width: 1536px) {
+  .wrapper {
+    max-width: 1536px;
+  }
+}
+
 /*** ------------------ RECIPE.INFO.MAIN ------------------------ ***/
 
 .recipe-info-main {
@@ -386,11 +430,6 @@
   .video-v-wrapper {
     flex-direction: column;
   }
-}
-
-.recipe-wrapper {
-  max-width: 1000px;
-  margin: auto;
 }
 
 .recipe-separator {
