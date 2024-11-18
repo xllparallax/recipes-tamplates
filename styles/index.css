@@ -830,7 +830,7 @@
 .agroup {
   display: flex;
   align-items: baseline;
-  gap: 5rem;
+  gap: 3rem;
   padding-top: 4rem;
 }
 
