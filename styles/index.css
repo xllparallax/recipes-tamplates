@@ -118,6 +118,7 @@
   font-weight: bold;
   color: var(--recipe-main-color);
   margin-bottom: 0;
+  margin-top: 0;
 }
 
 .recipe-content {
