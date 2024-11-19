@@ -2,52 +2,53 @@
   <div class="upload-image" style="width: 100%"></div>
   <div class="info-container">
     <div class="recipe-nav-top">
-      <div class="tags">
-        <span class="tag-cattegory">{{category}}</span>
-        <span class="tag-difficulty">{{difficulty}}</span>
-      </div>
-      <div class="buttons-navigation">
-        <button class="prev">← Anterior</button>
-        <button class="next">Siguiente →</button>
-      </div>
+      <nav class="recipe-nav-top">
+        <div class="tags" itemscope itemtype="https://schema.org/Recipe">
+          <p class="visually-hidden">
+            Categoría: <span itemprop="recipeCategory">Saludables</span>
+          </p>
+          <span class="tag" itemprop="recipeCategory">Saludables</span>
+
+          <p class="visually-hidden">
+            Dificultad: <span itemprop="difficultyLevel">Medio</span>
+          </p>
+          <span class="tag" itemprop="difficultyLevel">Medio</span>
+        </div>
+        <div class="buttons-navigation">
+          <button class="prev" aria-label="Receta anterior">← Anterior</button>
+          <button class="next" aria-label="Siguiente receta">
+            Siguiente →
+          </button>
+        </div>
+      </nav>
     </div>
+
     <div class="recipe-content">
-      <h1 class="name-recipe">{{title}}</h1>
-      <p class="description-recipe">{{description}}</p>
+      <h1 class="name-recipe" itemprop="name">{{title}}</h1>
+      <p class="description-recipe" itemprop="description">{{description}}</p>
     </div>
+
     <div class="recipe-icons">
-      <div class="detail">
-        <div class="icon">
-          <img
-            draggable="false"
-            src="http://127.0.0.1:5500/Group 1000002202.png"
-            alt=""
-          />
-        </div>
-        <span>{{portions}} porciones</span>
-      </div>
+      <p class="visually-hidden">
+        Porciones:
+        <span itemprop="recipeYield">{{portions}} porciones</span>
+      </p>
+      <span class="tag" itemprop="recipeYield">{{portions}} porciones</span>
 
-      <div class="detail">
-        <div class="icon">
-          <img
-            draggable="false"
-            src="http://127.0.0.1:5500/XMLID_806_.png"
-            alt=""
-          />
-        </div>
-        <span>{{time}} </span>
-      </div>
+      <p class="visually-hidden">
+        Tiempo de preparación: <span itemprop="prepTime">PT30M</span>
+      </p>
+      <span class="tag" itemprop="prepTime">30 minutos</span>
 
-      <div class="detail">
-        <div class="icon">
-          <img
-            draggable="false"
-            src="http://127.0.0.1:5500/vegetarian_5635323 1.png"
-            alt=""
-          />
-        </div>
-        <span>{{ingredients}} ingredientes</span>
-      </div>
+      <p class="visually-hidden">
+        Ingredientes:
+        <span itemprop="recipeIngredient"
+          >{{ingredientsCount}} ingredientes</span
+        >
+      </p>
+      <span class="tag" itemprop="recipeIngredient"
+        >{{ingredientsCount}} ingredientes</span
+      >
     </div>
   </div>
 </section>

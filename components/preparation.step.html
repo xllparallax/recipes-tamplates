@@ -1,9 +1,14 @@
-<li class="step">
+<li
+  class="step"
+  itemprop="step"
+  itemscope
+  itemtype="https://schema.org/HowToStep"
+>
   <div class="step-content">
     <h3 class="step-title">
       <strong>{{stepNumber}}</strong>
-      {{stepTitle}}
+      <span itemprop="name">{{stepTitle}}</span>
     </h3>
-    <p class="step-description">{{stepDescription}}</p>
+    <p class="step-description" itemprop="text">{{stepDescription}}</p>
   </div>
 </li>

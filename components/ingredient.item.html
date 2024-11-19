@@ -1,4 +1,11 @@
-<li class="ingredient-item">
-  <span class="ingredient-name">{{ingredientsName}}</span>
-  <span class="ingredient-quantity">{{ingredientsQuantity}}</span>
+<li
+  class="ingredient-item"
+  itemprop="recipeIngredient"
+  itemscope
+  itemtype="https://schema.org/HowToItem"
+>
+  <span class="ingredient-name" itemprop="name">{{ingredientsName}}</span>
+  <span class="ingredient-quantity" itemprop="amount"
+    >{{ingredientsQuantity}}</span
+  >
 </li>
