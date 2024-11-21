@@ -173,7 +173,7 @@
 
 .video-h {
   width: 100%;
-  height: 30rem;
+  height: 100%;
   object-fit: cover;
   border-radius: 1rem;
 }
@@ -190,6 +190,7 @@
 
 .video-horizontal {
   width: 100%;
+  height: 600px;
   background: black;
   border-radius: 1rem;
   padding-inline: 3rem;
@@ -484,7 +485,7 @@
 
 .buttons-navigation {
   display: flex;
-  gap: 1rem;
+  gap: 0.75rem;
 }
 
 .tag {
@@ -549,6 +550,7 @@
 
 .prev,
 .next {
+  padding: 0;
   background-color: transparent;
   border: none;
   font-size: 14px;
