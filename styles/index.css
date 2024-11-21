@@ -185,7 +185,7 @@
   justify-content: center;
   gap: 3rem;
   width: 100%;
-  padding-block: 3.5rem;
+  padding-block: 4rem;
 }
 
 .video-horizontal {
@@ -867,7 +867,7 @@
 
 #recipe-info {
   padding-top: 2.5rem;
-  padding-bottom: 5rem;
+  padding-bottom: 4rem;
 }
 
 .dash {
