@@ -692,6 +692,7 @@
   justify-content: space-between;
   margin-bottom: 15px;
   padding-bottom: 15px;
+  color: var(--recipe-gray-color);
 }
 
 .ingredient-icon {
@@ -712,7 +713,6 @@
 
 .ingredient-quantity {
   text-align: right;
-  color: #666;
 }
 
 .ingredient-item {
