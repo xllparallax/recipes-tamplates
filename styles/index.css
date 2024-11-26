@@ -379,6 +379,11 @@
   gap: 3rem;
 }
 
+.recipe-image img {
+  height: 100%;
+  border-radius: 20px;
+}
+
 .recipe-list-img-main {
   display: flex;
   flex-direction: column;
