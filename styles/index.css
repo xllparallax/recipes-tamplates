@@ -898,22 +898,24 @@
   line-height: 1;
 }
 
-.title :nth-child(1) {
+.title div :nth-child(1) {
   margin: 0;
   font-size: 2rem;
   color: var(--recipe-gray-color);
 }
 
-.title :nth-child(2) {
+.title div :nth-child(2) {
   margin: 0;
   font-size: 3rem;
   color: var(--recipe-main-color);
+  font-weight: bold;
 }
 
-.title :nth-child(3) {
+.title :nth-child(2) {
   color: #666;
   margin: 0;
   margin: 0;
+  font-size: 1.25rem;
 }
 
 .metrics {
