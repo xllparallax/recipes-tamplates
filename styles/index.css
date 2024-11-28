@@ -727,6 +727,8 @@
   list-style: none;
   display: flex;
   flex-direction: column;
+  padding-top: 1rem;
+  padding-bottom: 1.5rem;
 }
 
 .ingredient-item-container {
@@ -747,7 +749,7 @@
 }
 
 .dash-container {
-  height: 2px;
+  height: 1px;
   background-image: linear-gradient(
     to right,
     var(--recipe-main-color) 33%,
@@ -756,10 +758,6 @@
   background-position: bottom;
   background-size: 18px 2px;
   background-repeat: space;
-}
-
-.ingredients-list :nth-child(1) {
-  padding-top: 0;
 }
 
 .add-to-cart {
