@@ -722,17 +722,40 @@
 }
 
 .ingredient-item {
-  display: flex;
   width: 100%;
+  color: var(--recipe-dark-gray-color);
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+}
+
+.ingredient-item-container {
+  display: flex;
   align-items: center;
   justify-content: space-between;
   gap: 1rem;
-  width: 100%;
-  height: auto;
   padding-top: 1rem;
   padding-bottom: 1.5rem;
-  border-bottom: 2px dashed var(--recipe-main-color);
-  color: var(--recipe-dark-gray-color);
+}
+
+.ingredient-item::marker {
+  display: none;
+}
+
+.dash-container {
+  width: 100%;
+}
+
+.dash-container {
+  height: 2px;
+  background-image: linear-gradient(
+    to right,
+    var(--recipe-main-color) 33%,
+    rgba(255, 255, 255, 0) 0%
+  );
+  background-position: bottom;
+  background-size: 18px 2px;
+  background-repeat: repeat-x;
 }
 
 .ingredients-list :nth-child(1) {

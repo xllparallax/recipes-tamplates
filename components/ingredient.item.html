@@ -5,8 +5,13 @@
   itemtype="https://schema.org/HowToItem"
   id="{{ingredientId}}"
 >
-  <span class="ingredient-name" itemprop="name">{{ingredientsName}}</span>
-  <span class="ingredient-quantity" itemprop="amount"
-    >{{ingredientsQuantity}}</span
-  >
+  <div class="ingredient-item-container">
+    <span class="ingredient-name" itemprop="name">{{ingredientsName}}</span>
+    <span class="ingredient-quantity" itemprop="amount"
+      >{{ingredientsQuantity}}</span
+    >
+  </div>
+  <div class="dash-container"></div>
 </li>
+
+<link rel="stylesheet" href="../styles/index.css" />
