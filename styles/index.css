@@ -267,6 +267,14 @@
   gap: 2rem;
 }
 
+#img-preparation img {
+  border-radius: 20px;
+}
+
+.upload-image img {
+  border-radius: 20px;
+}
+
 .step {
   display: flex;
   align-items: flex-start;
