@@ -385,6 +385,7 @@
 .recipe-info {
   display: flex;
   gap: 3rem;
+  min-height: 21.875rem;
 }
 
 .recipe-image img {
