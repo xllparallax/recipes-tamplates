@@ -1,7 +1,11 @@
 <section class="preparation-recipe-main" aria-labelledby="preparation-title">
   <h2 class="ingredient-list-title">Preparación</h2>
   <div id="img-preparation" class="upload-image" style="width: 100%">
-    <img src="{{preparationImageUrl}}" alt="" />
+    <picture>
+      <source srcset="{{desktopImageUrl}}" media="(min-width: 1024px)" />
+      <source srcset="{{mobileImageUrl}}" media="(min-width: 400px)" />
+      <img src="{{mobileImageUrl}}" alt="Banner" />
+    </picture>
   </div>
   <ol class="preparation-steps" itemscope itemtype="https://schema.org/HowTo">
     {{preparationSteps}}

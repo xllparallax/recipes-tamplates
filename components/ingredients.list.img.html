@@ -8,5 +8,9 @@
   <div class="add-to-cart"></div>
 </section>
 <div class="upload-image">
-  <img src="{{ingredientsImageUrl}}" alt="" />
+  <picture>
+    <source srcset="{{desktopImageUrl}}" media="(min-width: 1024px)" />
+    <source srcset="{{mobileImageUrl}}" media="(min-width: 400px)" />
+    <img src="{{mobileImageUrl}}" alt="Banner" />
+  </picture>
 </div>

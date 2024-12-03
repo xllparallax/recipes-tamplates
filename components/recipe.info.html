@@ -1,6 +1,10 @@
 <section class="recipe-info recipe-wrapper">
   <div class="upload-image recipe-image" style="width: 100%">
-    <img src="{{recipeImageUrl}}" alt="" />
+    <picture>
+      <source srcset="{{desktopImageUrl}}" media="(min-width: 1024px)" />
+      <source srcset="{{mobileImageUrl}}" media="(min-width: 400px)" />
+      <img src="{{mobileImageUrl}}" alt="Banner" />
+    </picture>
   </div>
   <div class="info-container">
     <nav class="recipe-nav-top">
