@@ -387,8 +387,19 @@
 
 .recipe-info {
   display: flex;
+  flex-direction: column;
   gap: 3rem;
   min-height: 21.875rem;
+}
+
+@media (min-width: 768px) {
+  .recipe-info {
+    flex-direction: row;
+  }
+}
+
+.recipe-image {
+  min-height: 250px;
 }
 
 .recipe-image img {
@@ -412,12 +423,6 @@
   display: block;
   object-fit: cover;
 }
-
-/* @media (min-width: 768px) and (max-width: 1024px) {
-  .recipe-info-main {
-    width: 100%;
-  }
-} */
 
 @media (min-width: 480px) and (max-width: 768px) {
   .recipe-icons {
@@ -893,11 +898,6 @@
 
 .agroup > div {
   width: 100%;
-}
-
-#recipe-info {
-  padding-top: 2.5rem;
-  padding-bottom: 4rem;
 }
 
 .dash {

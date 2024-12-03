@@ -1,58 +1,75 @@
-<section class="recipe-info recipe-wrapper">
-  <div class="upload-image recipe-image" style="width: 100%">
-    <picture>
-      <source srcset="{{desktopImageUrl}}" media="(min-width: 1024px)" />
-      <source srcset="{{mobileImageUrl}}" media="(min-width: 400px)" />
-      <img src="{{mobileImageUrl}}" alt="Banner" />
-    </picture>
-  </div>
-  <div class="info-container">
-    <nav class="recipe-nav-top">
-      <div class="tags" itemscope itemtype="https://schema.org/Recipe">
-        <p class="visually-hidden">
-          Categoría: <span itemprop="recipeCategory">Saludables</span>
-        </p>
-        <span class="tag" itemprop="recipeCategory">Saludables</span>
-
-        <p class="visually-hidden">
-          Dificultad: <span itemprop="difficultyLevel">Medio</span>
-        </p>
-        <span class="tag difficulty" itemprop="difficultyLevel">Medio</span>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/index.css" />
+  </head>
+  <body>
+    <section class="recipe-info recipe-wrapper">
+      <div class="upload-image recipe-image" style="width: 100%">
+        <picture>
+          <source srcset="{{desktopImageUrl}}" media="(min-width: 1024px)" />
+          <source srcset="{{mobileImageUrl}}" media="(min-width: 400px)" />
+          <img src="{{mobileImageUrl}}" alt="Banner" />
+        </picture>
       </div>
-      <div class="buttons-navigation">
-        <button class="prev" aria-label="Receta anterior">← Anterior</button>
-        <button class="next" aria-label="Siguiente receta">Siguiente →</button>
+      <div class="info-container">
+        <nav class="recipe-nav-top">
+          <div class="tags" itemscope itemtype="https://schema.org/Recipe">
+            <p class="visually-hidden">
+              Categoría: <span itemprop="recipeCategory">Saludables</span>
+            </p>
+            <span class="tag" itemprop="recipeCategory">Saludables</span>
+
+            <p class="visually-hidden">
+              Dificultad: <span itemprop="difficultyLevel">Medio</span>
+            </p>
+            <span class="tag difficulty" itemprop="difficultyLevel">Medio</span>
+          </div>
+          <div class="buttons-navigation">
+            <button class="prev" aria-label="Receta anterior">
+              ← Anterior
+            </button>
+            <button class="next" aria-label="Siguiente receta">
+              Siguiente →
+            </button>
+          </div>
+        </nav>
+
+        <div class="recipe-content">
+          <h1 class="name-recipe" itemprop="name">{{title}}</h1>
+          <p class="description-recipe" itemprop="description">
+            {{description}}
+          </p>
+        </div>
+
+        <div class="recipe-icons">
+          <p class="visually-hidden">
+            Porciones:
+            <span itemprop="recipeYield">{{portions}} porciones</span>
+          </p>
+          <span class="tag-metric" itemprop="recipeYield"
+            >{{portions}} porciones</span
+          >
+
+          <p class="visually-hidden">
+            Tiempo de preparación: <span itemprop="prepTime">PT30M</span>
+          </p>
+          <span class="tag-metric" itemprop="prepTime">{{time}} minutos</span>
+
+          <p class="visually-hidden">
+            Ingredientes:
+            <span itemprop="recipeIngredient"
+              >{{ingredientsCount}} ingredientes</span
+            >
+          </p>
+          <span class="tag-metric" itemprop="recipeIngredient"
+            >{{ingredientsCount}} ingredientes</span
+          >
+        </div>
       </div>
-    </nav>
-
-    <div class="recipe-content">
-      <h1 class="name-recipe" itemprop="name">{{title}}</h1>
-      <p class="description-recipe" itemprop="description">{{description}}</p>
-    </div>
-
-    <div class="recipe-icons">
-      <p class="visually-hidden">
-        Porciones:
-        <span itemprop="recipeYield">{{portions}} porciones</span>
-      </p>
-      <span class="tag-metric" itemprop="recipeYield"
-        >{{portions}} porciones</span
-      >
-
-      <p class="visually-hidden">
-        Tiempo de preparación: <span itemprop="prepTime">PT30M</span>
-      </p>
-      <span class="tag-metric" itemprop="prepTime">30 minutos</span>
-
-      <p class="visually-hidden">
-        Ingredientes:
-        <span itemprop="recipeIngredient"
-          >{{ingredientsCount}} ingredientes</span
-        >
-      </p>
-      <span class="tag-metric" itemprop="recipeIngredient"
-        >{{ingredientsCount}} ingredientes</span
-      >
-    </div>
-  </div>
-</section>
+    </section>
+  </body>
+</html>
