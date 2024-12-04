@@ -913,7 +913,8 @@
 .dash {
   border-bottom: 2px dashed var(--recipe-main-color);
   color: var(--recipe-dark-gray-color);
-  width: 100%;
+  max-width: 1300px;
+  margin: auto;
 }
 
 .nutrition-container {
