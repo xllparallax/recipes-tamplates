@@ -381,8 +381,10 @@
   }
 }
 
-.recipe-image {
-  min-height: 250px;
+@media (min-width: 768px) {
+  .recipe-image {
+    min-height: 250px;
+  }
 }
 
 .recipe-image img {
