@@ -159,6 +159,12 @@
   padding-inline: 1rem;
 }
 
+@media (min-width: 480px) {
+  .video-horizontal {
+    height: 300px;
+  }
+}
+
 @media (min-width: 768px) {
   .video-horizontal {
     height: 600px;
