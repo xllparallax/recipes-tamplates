@@ -209,10 +209,16 @@
 
 .ingredient-list-title {
   margin: 0;
-  font-size: 2.25rem;
+  font-size: clamp(1.4375rem, 0.6786rem + 3.7946vw, 2.5rem);
   font-weight: bold;
   color: var(--recipe-main-color);
   margin-bottom: 0;
+}
+
+@media (min-width: 768px) {
+  .ingredient-list-title {
+    font-size: 2.5rem;
+  }
 }
 
 .text-ingredients {
