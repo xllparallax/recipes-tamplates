@@ -19,14 +19,16 @@
         <nav class="recipe-nav-top">
           <div class="tags" itemscope itemtype="https://schema.org/Recipe">
             <p class="visually-hidden">
-              Categoría: <span itemprop="recipeCategory">Saludables</span>
+              Categoría: <span itemprop="recipeCategory">{{category}}</span>
             </p>
-            <span class="tag" itemprop="recipeCategory">Saludables</span>
+            <span class="tag" itemprop="recipeCategory">{{category}}</span>
 
             <p class="visually-hidden">
-              Dificultad: <span itemprop="difficultyLevel">Medio</span>
+              Dificultad: <span itemprop="difficultyLevel">{{difficulty}}</span>
             </p>
-            <span class="tag difficulty" itemprop="difficultyLevel">Medio</span>
+            <span class="tag difficulty" itemprop="difficultyLevel"
+              >{{difficulty}}</span
+            >
           </div>
           <div class="buttons-navigation">
             <button class="prev" aria-label="Receta anterior">
